@@ -9,8 +9,10 @@ class PostAddForm extends Component {
         }
         this.onAdd = (e) => {
             e.preventDefault();
-            this.props.onAdd(this.state.text);
-            this.setState({text:''});
+            if(this.state.text !== ''){
+                this.props.onAdd(this.state.text);
+                this.setState({text:''});
+            }
         }
     }
     render() {
