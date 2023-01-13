@@ -27,7 +27,7 @@ class PostAddForm extends Component {
                     onChange={(e) => this.setState({text: e.target.value})}
                 />
                 <button
-                    className='btn btn-outline-secondary'
+                    className='btn btn-outline-secondary btn-add'
                     type='submit'>
                     Add Post
                 </button>
